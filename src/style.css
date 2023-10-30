@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #51A08F;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    width: 50%;
+    display: grid;
+}
+.content{
+    background-color: #eeeeee;
+    padding: 0.5%;
+}
+.editIcon{
+    width: 35px;
+}
+.deleteIcon{
+    width: 35px;
+}
+.heading{
+    background-color: #c38d9e;
+    color: white;
+    padding: 0.5%;
+    text-indent: 3%;
+    font-size: 60px;
+}
+.editIcon,.deleteIcon{
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.deleteIcon:hover{
+    background-color: rgba(255, 0, 0, 0.544);
+    border-radius: 5px;
+}
+.editIcon:hover{
+    background-color: rgba(0, 128, 0, 0.46);
+    border-radius: 5px;
+}
+
