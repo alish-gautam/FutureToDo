@@ -1,6 +1,4 @@
 export function myProject(title,details){
-    let container=document.querySelector('.container')
-    let content=document.createElement('div')
     let listTitle=document.createElement('input')
     listTitle.placeholder='Eg: Pay bills'
     listTitle.value=title
@@ -10,15 +8,20 @@ export function myProject(title,details){
     description.placeholder='Details: house,rent,internet...'
     description.value=details
     description.classList.add('description')
-
-    content.appendChild(listTitle)
-    content.appendChild(description)
-    container.appendChild(content)
-    console.log(listTitle.value)
     return{
-        title,
-        details
+        listTitle,
+        description
     }
     
+}
+export function domAppend(listTitleElement,description){
+    let container=document.querySelector('.container')
+    let content=document.createElement('div')
+
+//    console.log(listTitle)
+    content.appendChild(listTitleElement)
+    content.appendChild(description)
+    // content.appendChild(description)
+    container.appendChild(content)
 }
 

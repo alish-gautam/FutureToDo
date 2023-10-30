@@ -1,5 +1,6 @@
 
 import { myProject } from "./TodoList"
+import { domAppend } from "./TodoList"
 export function myEventListeners(){
     let container=document.querySelector('.container')
     let content=document.querySelector('.content')
@@ -8,7 +9,8 @@ export function myEventListeners(){
 
     editIcon.addEventListener('click',()=>{
         container.removeChild(content)
-        myProject("Brush your teeth","Brush it first thing in the morning")
+        let project=myProject("Brush your teeth","Brush it first thing in the morning")        
+        domAppend(project.listTitle,project.description)
     })
     deleteIcon.addEventListener('click',()=>{
         container.removeChild(content)

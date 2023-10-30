@@ -1,7 +1,6 @@
 {
   "name": "to-do-list",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +17,6 @@
   "dependencies": {
     "path-browserify": "^1.0.1",
     "util": "^0.12.5"
-  }
+  },
+  "description": ""
 }
