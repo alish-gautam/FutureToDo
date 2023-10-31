@@ -2,9 +2,8 @@ import edit from './Images/editing.png'
 import trash from './Images/trash.png'
 import { myProject } from './TodoList'
 export function homePage(){
-    let todo1 = myProject("Brush your teeth","Brush it first thing in the morning")
+    let todo1=myProject("Brush your teeth","Brush it first thing in the morning")
     let container=document.querySelector(".container")
-    console.log(todo1.listTitle)
     let content=document.createElement('div')
     
     content.classList.add('content')
@@ -17,7 +16,8 @@ export function homePage(){
     let deleteIcon=document.createElement('img')
     deleteIcon.src=trash
     deleteIcon.classList.add('deleteIcon')
-    let titlediv=document.createElement('h1')
+    let titlediv=document.createElement('p')
+    titlediv.setAttribute('id','titlediv')
     titlediv.innerText = todo1.listTitle.value
     //appending to content and to the dom
     content.appendChild(titlediv)
@@ -25,5 +25,4 @@ export function homePage(){
     icon_container.appendChild(deleteIcon)
     content.appendChild(icon_container)
     container.appendChild(content)
-
 }
